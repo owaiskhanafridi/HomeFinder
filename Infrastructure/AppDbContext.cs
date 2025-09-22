@@ -1,10 +1,12 @@
 
 
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Net.Http.Headers;
 
 public sealed class AppDbContext : DbContext
 {
+
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
+
     //It was set traditionally as:
     //public virtual DbSet<Listing> Listings {get; set; }
     //Or in modern C#:
