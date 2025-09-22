@@ -8,7 +8,6 @@
 *.suo
 *.user
 *.userosscache  
-
 *.sln.docstates
 
 # User-specific files (MonoDevelop/Xamarin Studio)
@@ -362,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+
+ye hoga
