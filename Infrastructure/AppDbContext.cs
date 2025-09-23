@@ -22,6 +22,7 @@ public sealed class AppDbContext : DbContext
     {
         modelBuilder.Entity<Listing>(e =>
          {
+             e.HasIndex(x => x.Title).IsUnique();
              e.Property(x => x.Price).HasPrecision(12, 2);
              e.Property(x => x.Bathrooms).HasPrecision(3, 1);
              e.HasMany(x => x.Photos).WithOne(p => p.Listing).HasForeignKey(p => p.ListingId).OnDelete(DeleteBehavior.Cascade);
