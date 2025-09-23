@@ -9,12 +9,12 @@ public sealed class Listing
     [Required, MaxLength(120)]
     public string Title { get; set; } = default!;
     [MaxLength(2000)]
-    public string Description { get; set; } = default!;
+    public string? Description { get; set; } = default!;
 
     [Required, MaxLength(200)]
     public string AddressLine1 { get; set; } = default!;
     [Required, MaxLength(200)]
-    public int AddressLine2 { get; set; } = default!;
+    public string? AddressLine2 { get; set; } = default!;
     
     [Required, MaxLength(80)]
     public string City { get; set; } = default!;

@@ -8,5 +8,5 @@ public sealed class Photo
 
     public string Url { get; set; } = default!;
     public bool IsPrimary { get; set; }
-    public DateTime UploadAt { get; set; } = DateTime.UtcNow;
+    public DateTime UploadedAt { get; set; } = DateTime.UtcNow;
 }
