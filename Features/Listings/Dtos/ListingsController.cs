@@ -50,7 +50,7 @@ public sealed class ListingsController : ControllerBase
 
         _db.Listings.Add(entity);
         await _db.SaveChangesAsync(ct);
-        return CreatedAtAction(nameof(GetById), new { id = entity.Id }, entity.Id);
+        return CreatedAtAction(nameof(GetById), new { id = entity.Id }, entity);
     }
 
     [HttpGet("{id:guid}")]
